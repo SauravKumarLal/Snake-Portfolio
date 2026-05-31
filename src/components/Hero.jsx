@@ -1,28 +1,35 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import GenerativeArt from "./art/GenerativeArt";
 
-const PROMPT = 'sauravkrlal@portfolio:~$';
+const PROMPT = "sauravkrlal@portfolio:~$";
 
 export default function Hero({ artSize }) {
-  const [typed,  setTyped]  = useState('');
-  const [done,   setDone]   = useState(false);
+  const [typed, setTyped] = useState("");
+  const [done, setDone] = useState(false);
   const [copied, setCopied] = useState(false);
 
   useEffect(() => {
-    let i = 0, iv;
+    let i = 0,
+      iv;
     const delay = setTimeout(() => {
       iv = setInterval(() => {
         i++;
         setTyped(PROMPT.slice(0, i));
-        if (i >= PROMPT.length) { clearInterval(iv); setDone(true); }
+        if (i >= PROMPT.length) {
+          clearInterval(iv);
+          setDone(true);
+        }
       }, 52);
     }, 380);
-    return () => { clearTimeout(delay); clearInterval(iv); };
+    return () => {
+      clearTimeout(delay);
+      clearInterval(iv);
+    };
   }, []);
 
   const copyEmail = (e) => {
     e.preventDefault();
-    navigator.clipboard.writeText('sauravkrlal@gmail.com').then(() => {
+    navigator.clipboard.writeText("sauravkrlal@gmail.com").then(() => {
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     });
@@ -43,7 +50,9 @@ export default function Hero({ artSize }) {
           </h1>
           <div className="hero-status">
             <span className="status-dot" />
-            <span className="status-text">Software Engineer @ Ramco Systems<br />Building distributed enterprise applications</span>
+            <span className="status-text">
+              Software Engineer @ Ramco Systems • B.Tech CSE, VIT Vellore '25
+            </span>
           </div>
           <p className="hero-tagline">
             Backend Engineer · Distributed Systems ·
@@ -53,16 +62,21 @@ export default function Hero({ artSize }) {
           <div className="hero-links">
             <a
               href="mailto:sauravkrlal@gmail.com"
-              className={`hero-link${copied ? ' hero-link--copied' : ''}`}
+              className={`hero-link${copied ? " hero-link--copied" : ""}`}
               onClick={copyEmail}
               title="Click to copy"
             >
-              {copied ? 'Copied' : 'sauravkrlal@gmail.com'}
+              {copied ? "Copied" : "sauravkrlal@gmail.com"}
               <svg
                 className="copy-icon"
-                width="11" height="11" viewBox="0 0 24 24"
-                fill="none" stroke="currentColor"
-                strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+                width="11"
+                height="11"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 aria-hidden="true"
               >
                 {copied ? (
@@ -97,7 +111,9 @@ export default function Hero({ artSize }) {
         </div>
 
         <div className="hero-art">
-          <span className="fig-label">[ Fig. 1 ] — generative field simulation</span>
+          <span className="fig-label">
+            [ Fig. 1 ] — generative field simulation
+          </span>
           <GenerativeArt width={artSize.w} height={artSize.h} />
         </div>
       </div>
