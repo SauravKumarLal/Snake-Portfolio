@@ -8,7 +8,7 @@ export const NAV_LINKS = [
 ];
 
 export const ABOUT_BLURB =
-  "Backend Engineer based in Chennai. At Ramco Systems I own end-to-end infrastructure for the rTask ecosystem — Kafka-driven microservices, enterprise OAuth2 flows, and production RAG pipelines on AWS Bedrock, serving 7,000+ users across 400+ enterprise customers. I led the effort that brought API failures from 8,000/day down to under 20. Formerly, I researched GAN-based video generation at Samsung R&D Institute.";
+  "Backend Engineer based in Chennai. At Ramco Systems, I own backend systems for the rTask ecosystem, building Kafka-driven distributed services, enterprise OAuth2 and Azure AD integrations, and AI-powered platform capabilities using AWS Bedrock, Claude, and GPT models. My work serves 7,000+ users across 400+ enterprise customers and processes 8-9 lakh API requests daily. I led initiatives that reduced API failures from 8,000 per day to fewer than 20 through deep production debugging and reliability improvements. Previously, I worked as a Research Intern at Samsung R&D Institute, researching GAN-based video generation for real-time chat applications.";
 
 export const SKILLS = [
   {
@@ -36,7 +36,7 @@ export const EXPERIENCE = [
     period: "Feb 2025 — Present",
     location: "Chennai, India",
     bullets: [
-      "Own and maintain end-to-end backend systems for the rTask ecosystem, serving 7,000+ users across 400+ enterprise customers and supporting 8–9 lakh API requests daily.",
+      "Own and maintain end-to-end backend systems for the rTask ecosystem, serving 7,000+ users across 400+ enterprise customers and supporting 8-9 lakh API requests daily.",
       "Act as the primary technical owner for a 4-member engineering team, driving task planning, code reviews, release coordination, and production issue resolution.",
       "Reduced API failures from 8,000/day to less than 20/day through deep log analysis, root-cause debugging, and performance tuning.",
       "Design and maintain distributed backend services using Node.js, TypeScript, Kafka, Redis, MongoDB, Elasticsearch, and WebSockets.",
