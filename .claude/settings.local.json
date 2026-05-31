@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\Saur977RNP2\\\\Downloads\\\\Portfolio-Me\\\\src\\\\components\\\\art\")",
+      "Bash(Out-Null)",
+      "Bash(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\Saur977RNP2\\\\Downloads\\\\Portfolio-Me\\\\src\\\\data\")",
+      "Bash(Write-Output \"done\")",
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\Users\\\\Saur977RNP2\\\\Downloads\\\\Portfolio-Me\" | Where-Object { !$_.PSIsContainer } | Select-Object -ExpandProperty FullName | Sort-Object)",
+      "PowerShell(New-Item *)",
+      "WebFetch(domain:stripe.dev)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\Saur977RNP2\\\\Downloads\\\\Portfolio-Me\" -Recurse -Force)",
+      "Bash(Select-Object FullName)",
+      "PowerShell(head *)",
+      "Bash(node -e ' *)",
+      "Bash(Remove-Item *)"
+    ]
+  }
+}
