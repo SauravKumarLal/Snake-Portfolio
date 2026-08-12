@@ -91,7 +91,7 @@ export default function Hero({ artSize }) {
             </a>
             <span className="hero-dot">·</span>
             <a
-              href="https://drive.google.com/file/d/1PQ3Co9UKQbPMHB9lRWneeLMYz_YvLPIP/view"
+              href="https://drive.google.com/file/d/10RIZnyoyhBdhO0tHzqXnSyHyIYziZYHu/view?usp=drive_link"
               className="hero-link"
               target="_blank"
               rel="noopener noreferrer"

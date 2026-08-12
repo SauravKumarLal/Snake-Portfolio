@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { ABOUT_BLURB, SKILLS, PROJECTS } from "../data";
 
 const RESUME =
-  "https://drive.google.com/file/d/1PQ3Co9UKQbPMHB9lRWneeLMYz_YvLPIP/view";
+  "https://drive.google.com/file/d/10RIZnyoyhBdhO0tHzqXnSyHyIYziZYHu/view?usp=drive_link";
 
 // ── synth sounds ─────────────────────────────────────────────────────────────
 function makeSounds() {
