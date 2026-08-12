@@ -166,7 +166,7 @@ const EXPERIENCE = [
     period: "Feb 2025 — Present",
     location: "Chennai, India",
     bullets: [
-      "Own and maintain end-to-end backend systems for the rTask ecosystem, serving 7,000+ users across 400+ enterprise customers and supporting 8–9 lakh API requests daily.",
+      "Own and maintain end-to-end backend systems for the rTask ecosystem, serving 10,000+ users across 450+ enterprise customers and supporting 8–9 lakh API requests daily.",
       "Act as the primary technical owner for a 4-member engineering team, driving task planning, code reviews, release coordination, and production issue resolution.",
       "Reduced API failures from 8,000/day to less than 20/day through deep log analysis, root-cause debugging, and performance tuning.",
       "Design and maintain distributed backend services using Node.js, TypeScript, Kafka, Redis, MongoDB, Elasticsearch, and WebSockets.",
